@@ -1,0 +1,114 @@
+/* Navigation */
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+body {
+  background-color: black;
+}
+h1 {
+  color: #f2f2f2;
+}
+
+.topnav {
+  background-color: rgba(51, 51, 51, 0.068);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.cart1 {
+  float: right;
+}
+
+.topnav a:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/*text---------------------------*/
+
+.Menintro {
+  margin-top: 50px;
+  color: #f2f2f2;
+  margin-left: 150px;
+  padding: 14px 16px;
+  text-align: left;
+  font-size: larger;
+}
+
+/*--------------------products----------------------------------------------------------------------------------*/
+img {
+  max-height: 300px;
+  max-width: 300px;
+  border-top-left-radius: 100px;
+}
+
+.card {
+  border-top-right-radius: 110px;
+  border-top-left-radius: 110px;
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  float: left;
+  font-size: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 300px;
+  max-height: 600px;
+  margin: 8%;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.price {
+  color: rgb(143, 0, 0);
+  font-size: 22px;
+}
+
+.card button {
+  border-radius: 25px;
+  border-color: white;
+  outline: 0px;
+  padding: 18px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 75%;
+
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    float: left;
+    width: 33.33%;
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  float: right;
+  color: rgb(255, 255, 255);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}

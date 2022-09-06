@@ -1,0 +1,66 @@
+h1 {
+  text-align: left;
+  max-width: 490px;
+  border-bottom: 2px solid black;
+  color: black;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+body {
+  background-color: white;
+}
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.cart1 {
+  float: right;
+}
+
+.topnav a:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/*text---------------------------*/
+
+.Menintro {
+  margin-top: 50px;
+  color: #f2f2f2;
+  margin-left: 150px;
+  padding: 14px 16px;
+  text-align: left;
+  font-size: larger;
+}
+
+/* --------------------------------------------Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  float: right;
+  color: rgb(255, 255, 255);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}

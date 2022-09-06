@@ -115,13 +115,14 @@ span {
 /*---------------------------------------Betalningsmetod---------------------------------------------------------------*/
 
 .row {
+  align-items: center;
   padding-top: 20px;
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
-  max-width: 1100px;
+  max-width: 500px;
 }
 
 .col-25 {
@@ -139,7 +140,6 @@ span {
   -ms-flex: 75%; /* IE10 */
   flex: 75%;
   margin-left: 0%;
-  margin-left: 70%;
 }
 
 .col-25,

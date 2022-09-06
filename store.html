@@ -22,7 +22,7 @@
 
     <div class="product-container">
       <div class="product-header">
-        <button>Clear Cart</button>
+        <button id="clearCart">Clear Cart</button>
         <h5 class="product-title">PRODUCTS</h5>
         <h5 class="price">PRICE</h5>
         <h5 class="quantity">QUANTITY</h5>
@@ -61,15 +61,25 @@
                 type="text"
                 id="adr"
                 name="address"
-                placeholder="542 W. 15th Street"
+                placeholder="exempelvägen 69"
               />
               <label for="city"><i class="fa fa-institution"></i> Stad</label>
-              <input type="text" id="city" name="city" placeholder="New York" />
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Stockholm"
+              />
 
               <div class="row">
                 <div class="col-50">
                   <label for="state">Ort</label>
-                  <input type="text" id="state" name="state" placeholder="NY" />
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    placeholder="Älvsjö"
+                  />
                 </div>
                 <div class="col-50">
                   <label for="zip">Postkod</label>
@@ -90,6 +100,7 @@
     </div>
 
     <footer>Designed by Robert Falkbäck Rovenko</footer>
+    <script src="deleteitems.js"></script>
     <script src="store.js"></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

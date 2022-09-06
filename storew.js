@@ -20,43 +20,25 @@ function myFunction() {
 
 /*--------------------------------------------------------------------------------------------------------*/
 
-let cart = document.querySelectorAll("#myCart");
+let cart = document.querySelectorAll("#myCartW");
 
 let products = [
   {
-    name: "Dior Sauvage",
-    tag: "diorsauvage",
-    price: 1100,
+    name: "Miss Dior",
+    tag: "missdior",
+    price: 1250,
     inCart: 0,
   },
   {
-    name: "Bleu De Chanel",
-    tag: "bleudechanel",
-    price: 1350,
-    inCart: 0,
-  },
-  {
-    name: "Prada Luna Rossa Ocean",
-    tag: "pradalunarossaocean",
-    price: 1000,
-    inCart: 0,
-  },
-  {
-    name: "Davidoff Cool Water",
-    tag: "davidoffcoolwater",
-    price: 260,
-    inCart: 0,
-  },
-  {
-    name: "Versace Eros",
-    tag: "versaceeros",
-    price: 915,
-    inCart: 0,
-  },
-  {
-    name: "Aqua Di Gio Profondo",
-    tag: "aquadigioprofondo",
+    name: "Coco Madammosielle",
+    tag: "coco",
     price: 1150,
+    inCart: 0,
+  },
+  {
+    name: "Lancome La Vie Est Belle",
+    tag: "lavieestbelle",
+    price: 1300,
     inCart: 0,
   },
 ];
@@ -144,24 +126,24 @@ function displayCart() {
     productContainer.innerHTML = "";
     Object.values(cartItems).map((item) => {
       productContainer.innerHTML += `
-      
-      
-        <img src="/images/${item.tag}.jpg">
         
-        <span>${item.name}</span>
-      
-      <span>${item.price} SEK   </span>
-      
-      <span>${item.inCart} in your cart </span>  
-
-      Total  ${item.inCart * item.price} SEK    
-      `;
+        
+          <img src="/images/${item.tag}.jpg">
+          
+          <span>${item.name}</span>
+        
+        <span>${item.price} SEK   </span>
+        
+        <span>${item.inCart} in your cart </span>  
+  
+        Total  ${item.inCart * item.price} SEK    
+        `;
     });
 
     productContainer.innerHTML += `
-    <div class="basketTotalContainer">
-    <h4 class="basketTotalTitle">Total Cost</h4>
-    <h4 class="basketTotal">${cartCost} SEK</h4></div>`;
+      <div class="basketTotalContainer">
+      <h4 class="basketTotalTitle">Total Cost</h4>
+      <h4 class="basketTotal">${cartCost} SEK</h4></div>`;
   }
 }
 

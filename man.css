@@ -37,6 +37,7 @@ span {
 }
 
 .topnav {
+  padding: 2px;
   background-color: rgba(51, 51, 51, 0.116);
   overflow: hidden;
 }

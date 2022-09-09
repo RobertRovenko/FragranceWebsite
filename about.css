@@ -1,15 +1,10 @@
-* {
-  font-family: "Kumbh Sans", sans-serif;
-  box-sizing: border-box;
-}
-
 /* Slideshow container */
 .slideshow-container {
-  margin-top: 0%;
+  margin-top: 3%;
   max-width: 500px;
   max-height: 500px;
   position: relative;
-  margin-left: 38%;
+  margin-left: 70%;
   max-height: 100px;
 }
 
@@ -40,11 +35,6 @@ img {
   }
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------*/
-* {
-  font-family: "Kumbh Sans", sans-serif;
-}
-
 html {
   height: 100%;
 }
@@ -58,7 +48,7 @@ body {
   box-shadow: 2px 2px 2px black;
   position: absolute;
   top: 38%;
-  left: 70%;
+  left: 40%;
   width: 400px;
   padding: 40px;
   transform: translate(-50% -50%);
@@ -221,9 +211,16 @@ body {
 }
 
 /*-----------------Top knapp-----------------------------------------------------------------------------*/
-
+#myBtn:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.205
+  ); /* Add a dark-grey background on hover */
+}
+/* --------------------------------------------------------------------------------------------------*/
 #myBtn {
-  font-family: "Kumbh Sans", sans-serif;
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 100px; /* Place the button at the bottom of the page */
@@ -248,41 +245,30 @@ body {
   ); /* Add a dark-grey background on hover */
 }
 
-/* --------------------------------------------------------------------------------------------------*/
-
-.home a {
+/* Navigation */
+span {
+  text-align: right;
+  color: whitesmoke;
+  font-size: 23px;
   font-family: "Kumbh Sans", sans-serif;
-}
-h1,
-p {
-  text-align: left;
-  text-shadow: 4px 4px 4px black;
-  max-width: auto;
-  font-family: "Kumbh Sans", sans-serif;
-  color: white;
-  margin-top: 100px;
-  margin-left: 50px;
+  letter-spacing: 2px;
 }
 
 .p3 {
-  font-family: "Kumbh Sans", sans-serif;
-}
-body {
-  background-color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .topnav {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.226);
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.205);
-  font-family: "Kumbh Sans", sans-serif;
 }
 
 .topnav a {
-  font-family: "Kumbh Sans", sans-serif;
   text-shadow: 4px 4px 4px black;
   float: left;
   display: block;
-  color: white;
+  color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 22px;
@@ -300,15 +286,32 @@ body {
   display: none;
 }
 
+.sticky .cart1 {
+  position: fixed;
+
+  top: 0;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 0;
+}
+
 /*text---------------------------*/
 
 .Menintro {
+  max-width: 550px;
+  letter-spacing: 3px;
+  text-shadow: 4px 4px 4px black;
   margin-top: 50px;
-  color: #f2f2f2;
+  color: white;
   margin-left: 150px;
   padding: 14px 16px;
   text-align: left;
-  font-size: larger;
+  font-size: 25px;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 /* --------------------------------------------Clear floats after the columns */

@@ -1,4 +1,229 @@
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 0%;
+  max-width: 500px;
+  max-height: 500px;
+  position: relative;
+  margin-left: 38%;
+  max-height: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+img {
+  max-height: 450px;
+  max-width: 450px;
+  border: solid 3px black;
+  border-radius: 10px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+* {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.loginBox {
+  box-shadow: 2px 2px 2px black;
+  position: absolute;
+  top: 38%;
+  left: 70%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50% -50%);
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.loginBox h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.loginBox .userBox {
+  position: relative;
+}
+
+.loginBox .userBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.loginBox .userBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.loginBox .userBox input:focus ~ label,
+.loginBox .userBox input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.forgotPass {
+  font-size: 12px;
+  color: #5b6b8b;
+  float: right;
+}
+
+.btnSubmit {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
+
+.btnSubmit:hover {
+  background: #03e9f4;
+  color: rgb(10, 11, 21);
+  border-radius: 5px;
+}
+
+.btnSubmit span {
+  position: absolute;
+  display: block;
+}
+
+.btnSubmit span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.btnSubmit span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.btnSubmit span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.btnSubmit span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/*-----------------Top knapp-----------------------------------------------------------------------------*/
+
 #myBtn {
+  font-family: "Kumbh Sans", sans-serif;
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 100px; /* Place the button at the bottom of the page */
@@ -24,7 +249,12 @@
 }
 
 /* --------------------------------------------------------------------------------------------------*/
-h1 {
+
+.home a {
+  font-family: "Kumbh Sans", sans-serif;
+}
+h1,
+p {
   text-align: left;
   text-shadow: 4px 4px 4px black;
   max-width: auto;
@@ -35,7 +265,7 @@ h1 {
 }
 
 .p3 {
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Kumbh Sans", sans-serif;
 }
 body {
   background-color: white;
@@ -43,9 +273,12 @@ body {
 
 .topnav {
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.205);
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .topnav a {
+  font-family: "Kumbh Sans", sans-serif;
   text-shadow: 4px 4px 4px black;
   float: left;
   display: block;
@@ -86,8 +319,8 @@ body {
 }
 
 footer {
-  float: right;
+  position: absolute;
+  top: 95%;
+  left: 80%;
   color: rgb(255, 255, 255);
-  margin-right: 30px;
-  margin-bottom: 30px;
 }

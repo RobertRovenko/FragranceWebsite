@@ -13,6 +13,18 @@
   display: none;
 }
 
+table,
+th,
+h2,
+td {
+  max-width: 385px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.808);
+  color: white;
+  border: 1px solid black;
+  margin-left: 10%;
+}
+
 img {
   max-height: 450px;
   max-width: 450px;
